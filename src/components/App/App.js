@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Tabs from '../Tabs';
+import Tab from '../Tab';
 
-class App extends Component {
-	render() {
-
-		return <div />;
-	}
-}
-
+const App = () => (
+	<Tabs>
+		<Tab>Beep</Tab>
+		<Tab active>Boop</Tab>
+		<Tab>Bop</Tab>
+	</Tabs>
+);
 export default App;
