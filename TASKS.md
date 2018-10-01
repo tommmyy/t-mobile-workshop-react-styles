@@ -20,3 +20,15 @@ git checkout forms
 	Tyto komponenty by měli přijmat i property `id` a `label`.
 
 4. Pokus se refaktorovat formulář tak, abys nemusel mít pokaždé vlastní `onChange` handler.
+
+# styled-components
+
+```
+git checkout styled-components
+```
+
+5. Podle https://www.styled-components.com/docs/advanced#theming přiden `ThemeProvider` a veškeré barvy ulož do témy.
+
+6. V komponentě `Tab` použij psedoselector `:hover`: https://www.styled-components.com/docs/basics#psuedoelements-psuedoselectors-and-nesting
+
+7. Popřemýšlej jak v komponentě `Tab` by šel použít tag `css` pro refactor
