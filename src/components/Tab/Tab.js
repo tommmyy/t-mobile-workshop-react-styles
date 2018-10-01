@@ -1,17 +1,15 @@
-import React from 'react';
-import classNames from "classnames";
-import classes from './Tab.module.css';
+import styled from 'styled-components';
 
-const Tab = ({ children, href, active }) => (
-	<a
-		href={href}
-		className={classNames({
-			[classes.root]: true,
-			[classes.active]: active,
-		})}
-	>
-		{children}
-	</a>
-);
+const Tab = styled.a`
+	margin-right: 16px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	color: inherit;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	${(props) => props.active && `border-bottom: 2px solid rgb(0, 119, 204)`};
+	${(props) => props.active && `border-color: rgb(0, 119, 204)`};
+`;
 
 export default Tab;
